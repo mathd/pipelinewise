@@ -17,24 +17,8 @@ PIP_ARGS="[test]"
 pw_connector=
 
 define DEFAULT_CONNECTORS
-# tap-jira\
-# tap-kafka\
 tap-mysql\
-# tap-postgres\
-# tap-s3-csv\
-# tap-salesforce\
-# tap-snowflake\
-# tap-zendesk\
-# tap-mongodb\
-# tap-github\
-# tap-slack\
-# tap-mixpanel\
-# tap-twilio\
-# target-s3-csv\
 target-snowflake\
-# target-redshift\
-# target-postgres\
-# target-bigquery\
 transform-field
 endef
 
