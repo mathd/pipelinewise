@@ -1,1 +1,1 @@
-https://github.com/mathd/pipelinewise-target-snowflake
+-e https://github.com/mathd/pipelinewise-target-snowflake.git
