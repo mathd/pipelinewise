@@ -17,12 +17,6 @@ PIP_ARGS="[test]"
 pw_connector=
 
 define DEFAULT_CONNECTORS
-tap-mysql\
-target-snowflake\
-transform-field
-endef
-
-define STANDARD_CONNECTORS
 tap-jira\
 tap-kafka\
 tap-mysql\
@@ -246,7 +240,6 @@ all_connectors: default_connectors extra_connectors
 
 default_connectors: .check_license_env_var
 	@echo "Installing default connectors..."
-cd ..
 	@$(foreach var,$(DEFAULT_CONNECTORS), $(call install_connectors,$(var));)
 	$(call print_execute_time,Default connectors)
 
