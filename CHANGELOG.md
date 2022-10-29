@@ -1,3 +1,25 @@
+0.49.0 (2022-10-27)
+-------------------
+- Added `taps` option for `import` command to make it possible for importing specific taps.
+
+0.48.7 (2022-10-19)
+-------------------
+
+- Bump `pipelinewise-tap-kafka` from `7.1.0` to `7.1.2`
+  - Introducing the use of the seek method to reset the source partition offsets at the start of a run
+
+0.48.6 (2022-10-06)
+-------------------
+
+- Bump `joblib` from `1.1.0` to `1.2.0`
+- Bugfix for closing `MySQL`/`MariaDB` conenctions in `FastSync`
+- Removing `FastSync` from `s3-csv` and using only `singer`
+
+0.48.5 (2022-09-22)
+-------------------
+
+- Partial sync will now create table in target if it doesn't exist. [#1014](https://github.com/transferwise/pipelinewise/pull/1014)
+
 0.48.4 (2022-09-09)
 -------------------
 
